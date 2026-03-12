@@ -6,11 +6,45 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DC1132532F6300B0007A9829 /* TraceWatchApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DC1132492F6300AE007A9829 /* TraceWatchApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC1132512F6300B0007A9829 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCA106782F62E1A800715555 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC1132482F6300AE007A9829;
+			remoteInfo = "TraceWatchApp Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC1132542F6300B0007A9829 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DC1132532F6300B0007A9829 /* TraceWatchApp Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DC1132492F6300AE007A9829 /* TraceWatchApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TraceWatchApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA106802F62E1A800715555 /* Trace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		DC11324A2F6300AE007A9829 /* TraceWatchApp Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "TraceWatchApp Watch App";
+			sourceTree = "<group>";
+		};
 		DCA106822F62E1A800715555 /* Trace */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Trace;
@@ -19,6 +53,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DC1132462F6300AE007A9829 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCA1067D2F62E1A800715555 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				DCA106822F62E1A800715555 /* Trace */,
+				DC11324A2F6300AE007A9829 /* TraceWatchApp Watch App */,
 				DCA106812F62E1A800715555 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				DCA106802F62E1A800715555 /* Trace.app */,
+				DC1132492F6300AE007A9829 /* TraceWatchApp Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +91,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DC1132482F6300AE007A9829 /* TraceWatchApp Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC1132572F6300B0007A9829 /* Build configuration list for PBXNativeTarget "TraceWatchApp Watch App" */;
+			buildPhases = (
+				DC1132452F6300AE007A9829 /* Sources */,
+				DC1132462F6300AE007A9829 /* Frameworks */,
+				DC1132472F6300AE007A9829 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DC11324A2F6300AE007A9829 /* TraceWatchApp Watch App */,
+			);
+			name = "TraceWatchApp Watch App";
+			packageProductDependencies = (
+			);
+			productName = "TraceWatchApp Watch App";
+			productReference = DC1132492F6300AE007A9829 /* TraceWatchApp Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		DCA1067F2F62E1A800715555 /* Trace */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCA1068D2F62E1AA00715555 /* Build configuration list for PBXNativeTarget "Trace" */;
@@ -55,10 +120,12 @@
 				DCA1067C2F62E1A800715555 /* Sources */,
 				DCA1067D2F62E1A800715555 /* Frameworks */,
 				DCA1067E2F62E1A800715555 /* Resources */,
+				DC1132542F6300B0007A9829 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DC1132522F6300B0007A9829 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				DCA106822F62E1A800715555 /* Trace */,
@@ -80,6 +147,9 @@
 				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
+					DC1132482F6300AE007A9829 = {
+						CreatedOnToolsVersion = 26.1;
+					};
 					DCA1067F2F62E1A800715555 = {
 						CreatedOnToolsVersion = 26.1;
 					};
@@ -100,11 +170,19 @@
 			projectRoot = "";
 			targets = (
 				DCA1067F2F62E1A800715555 /* Trace */,
+				DC1132482F6300AE007A9829 /* TraceWatchApp Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DC1132472F6300AE007A9829 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCA1067E2F62E1A800715555 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +193,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DC1132452F6300AE007A9829 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCA1067C2F62E1A800715555 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +209,81 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DC1132522F6300B0007A9829 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC1132482F6300AE007A9829 /* TraceWatchApp Watch App */;
+			targetProxy = DC1132512F6300B0007A9829 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		DC1132552F6300B0007A9829 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KBT5F2NFNJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TraceWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Stephen.Trace;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Stephen.Trace.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.1;
+			};
+			name = Debug;
+		};
+		DC1132562F6300B0007A9829 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KBT5F2NFNJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TraceWatchApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Stephen.Trace;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Stephen.Trace.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.1;
+			};
+			name = Release;
+		};
 		DCA1068B2F62E1AA00715555 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -313,6 +472,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC1132572F6300B0007A9829 /* Build configuration list for PBXNativeTarget "TraceWatchApp Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC1132552F6300B0007A9829 /* Debug */,
+				DC1132562F6300B0007A9829 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCA1067B2F62E1A800715555 /* Build configuration list for PBXProject "Trace" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
